@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-bar input {
+    width: 100%;
+    padding-right: 40px;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.input-bar .material-symbols-outlined {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.tasklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item .material-symbols-outlined {
+    cursor: pointer;
+    color: red; /* Ensure the delete icon color is red */
+    margin-left: 10px; /* Add space between task text and delete icon */
+}
+/* Other styles remain unchanged */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
